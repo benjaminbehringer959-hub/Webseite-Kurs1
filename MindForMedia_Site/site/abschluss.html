@@ -6,15 +6,15 @@
 <title>Abschluss - Mind for Media</title>
 <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body data-page="abschluss">
+<body data-page="abschluss" data-feedback-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec" data-locked-label="Gesperrt" data-open-label="Starten" data-lock-message="" data-lock-title="" data-lock-button="" data-has-access="false">
 <a class="skip-link" href="#main">Zum Inhalt</a>
 <div class="lang-overlay" id="langOverlay" aria-hidden="true">
   <div class="lang-card">
-    <h2>Sprache waehlen</h2>
-    <p>Bitte waehle deine Sprache. Du kannst sie spaeter in der Navigation aendern.</p>
+    <h2>Sprache wählen</h2>
+    <p>Bitte wähle deine Sprache. Du kannst sie später in der Navigation ändern.</p>
     <div class="lang-actions">
       <button class="btn primary" data-lang="de">Deutsch</button>
-      <button class="btn ghost" data-lang="en" title="Coming soon">English (bald)</button>
+      <button class="btn ghost" data-lang="en">English</button>
     </div>
   </div>
 </div>
@@ -33,8 +33,8 @@
     </nav>
     <div class="header-actions">
       <div class="lang-switch">
-        <button class="lang-btn active" data-lang="de">DE</button>
-        <button class="lang-btn" data-lang="en" title="Coming soon">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
       <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
@@ -43,20 +43,21 @@
 <main id="main">
 <section class="section confetti">
   <div class="container narrow">
-    <h1>Glueckwunsch zum Abschluss!</h1>
+    <h1>Glückwunsch zum Abschluss!</h1>
     <div class="rich-text">
     <p>Wenn du jetzt auf die letzten 20 Tage zur&#252;ckblickst, ist leicht zu &#252;bersehen, was alles passiert ist. Nicht, weil es wenig war – sondern weil vieles davon leise war. Du hast dich nicht einfach „weniger ablenken lassen“. Du hast angefangen zu **verstehen**, wie dein Alltag, dein Handy und deine Aufmerksamkeit zusammenwirken. Du hast beobachtet, wann Impulse entstehen. Du hast gemerkt, was Stress mit dir macht. Du hast ausprobiert, wie sich Fokus anf&#252;hlt, wenn Umgebung, Routinen und Pausen mitspielen. Und du hast erlebt, dass Ver&#228;nderung nicht aus Disziplin entsteht, sondern aus Klarheit. Das ist mehr, als vielen bewusst ist. In diesen 20 Tagen hast du kein starres System gelernt. Du hast dir **Werkzeuge angeeignet**. Du hast Unterschiede gesp&#252;rt – zwischen automatischer Nutzung und bewusster Entscheidung, zwischen Reiz&#252;berflutung und Ruhe, zwischen Druck und Entlastung. Vielleicht nicht jeden Tag gleich stark. Vielleicht nicht immer sichtbar. Aber vorhanden. Uns war von Anfang an wichtig, keinen Kurs zu machen, der dir sagt, was du „richtig“ oder „falsch“ machst. Sondern einen, der dir hilft, dich selbst besser zu steuern – besonders in Lern- und Pr&#252;fungsphasen, in denen ohnehin viel von dir verlangt wird. Wenn du jetzt merkst, dass du fr&#252;her innehalten kannst, bewusster reagierst oder schneller erkennst, was dir gerade guttut, dann ist das kein kleiner Effekt. Das ist genau der Kern. Dieser Kurs endet hier – aber das, was du aufgebaut hast, ist nicht an diese 20 Tage gebunden. Du kannst darauf zur&#252;ckkommen. An stressigen Tagen. In intensiven Phasen. Oder einfach dann, wenn du merkst, dass alles wieder schneller wird. Du wei&#223;t jetzt, wo du ansetzen kannst. Danke, dass du dir die Zeit genommen hast, diesen Weg zu gehen. Zeit, Aufmerksamkeit und Ehrlichkeit mit sich selbst sind keine Selbstverst&#228;ndlichkeit – und genau das hast du hier investiert. Wenn du magst, freuen wir uns sehr &#252;ber ein paar ehrliche Worte zu deiner Erfahrung. Nicht, um etwas zu bewerten, sondern um zu verstehen, was dir wirklich geholfen hat und was wir noch besser machen k&#246;nnen. Und jetzt: Geh weiter mit dem, was du gelernt hast. Nicht perfekt. Nicht dauerhaft gleich. Aber mit mehr Klarheit, mehr Spielraum – und dem Wissen, dass du nicht bei null anf&#228;ngst.</p>
     </div>
     <div class="card">
       <h3>Feedback (optional)</h3>
-      <form class="feedback">
+      <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
         <label>Wie zufrieden bist du mit dem Kurs?</label>
-        <input type="text" placeholder="z. B. 1-5">
+        <input type="text" name="satisfaction" placeholder="z. B. 1-5">
         <label>Was hat dir am besten gefallen?</label>
-        <textarea rows="3"></textarea>
-        <label>Hast du Verbesserungsvorschlaege?</label>
-        <textarea rows="3"></textarea>
-        <button type="button" class="btn primary">Absenden</button>
+        <textarea rows="3" name="highlight"></textarea>
+        <label>Hast du Verbesserungsvorschläge?</label>
+        <textarea rows="3" name="improvements"></textarea>
+        <button type="submit" class="btn primary">Absenden</button>
+        <p class="small feedback-status" hidden></p>
       </form>
     </div>
   </div>
@@ -69,7 +70,7 @@
         <div class="logo-dot"></div>
         <div class="brand-text">Mind for Media</div>
       </div>
-      <p>Ein 20-Tage-Kurs fuer mehr Fokus beim Lernen.</p>
+      <p>Ein 20-Tage-Kurs für mehr Fokus beim Lernen.</p>
     </div>
     <div class="footer-links">
       <a href="datenschutz.html">Datenschutz</a>

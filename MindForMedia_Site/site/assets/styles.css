@@ -84,6 +84,10 @@ body {
 .footer-links { display: flex; gap: 16px; align-items: center; }
 .footer-links a { color: #f0f2f5; text-decoration: none; }
 .lang-overlay { position: fixed; inset: 0; background: rgba(31,36,48,0.5); display: none; align-items: center; justify-content: center; z-index: 20; }
+.lock-overlay { position: fixed; inset: 0; background: rgba(31,36,48,0.6); display: flex; align-items: center; justify-content: center; z-index: 30; padding: 20px; }
+.lock-card { background: #fff; padding: 24px; border-radius: 14px; width: min(420px, 92%); box-shadow: var(--shadow); text-align: center; }
+.lock-card h3 { margin-top: 0; }
+.lock-card p { color: var(--muted); }
 .lang-overlay.show { display: flex; }
 .lang-card { background: #fff; padding: 24px; border-radius: var(--radius); width: min(420px, 90%); box-shadow: var(--shadow); }
 .lang-actions { display: flex; gap: 10px; margin-top: 10px; }
