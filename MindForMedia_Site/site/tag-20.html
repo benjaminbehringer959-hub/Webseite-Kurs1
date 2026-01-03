@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 20</p>
     <h1>Tag 20</h1>
-    <div class="rich-text"><p>Wenn du auf die letzten Tage zur&#252;ckblickst, merkst du vielleicht, dass sich dein Umgang mit dem Handy ver&#228;ndert hat. Vielleicht nicht dramatisch, aber sp&#252;rbar. Manche Dinge laufen ruhiger, anderes bewusster. Und vielleicht gibt es auch Bereiche, die noch wackelig sind. Genau darum geht es heute.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du auf die letzten Tage zur&#252;ckblickst, merkst du vielleicht, dass sich dein Umgang mit dem Handy ver&#228;ndert hat. Vielleicht nicht dramatisch, aber sp&#252;rbar. Manche Dinge laufen ruhiger, anderes bewusster. Und vielleicht gibt es auch Bereiche, die noch wackelig sind. Genau darum geht es heute.</p>
 <p>Der heutige Tag ist kein Abschluss im Sinne von „fertig“. Er ist ein Innehalten. Ein Moment, um das, was du ausprobiert hast, als Ganzes zu betrachten. Nicht, um zu bewerten, sondern um zu pr&#252;fen, was sich f&#252;r dich tragf&#228;hig anf&#252;hlt – auch dann, wenn der Alltag wieder voller wird.</p>
 <p>Die Aufgabe heute hilft dir, dein pers&#246;nliches System noch einmal durchzugehen und f&#252;r die n&#228;chste Zeit &#252;berschaubar zu ordnen. Nicht als starres Regelwerk, sondern als Orientierung, auf die du zur&#252;ckgreifen kannst.</p>
 <p>Das Ziel heute ist nicht Perfektion, sondern ein realistischer Plan, der dich im Alltag begleitet.</p></div>
-    <div class='card'><h3>Konzentrationstest</h3><p>Kurztest 5-10 Minuten. Ergebnis notieren, um später zu vergleichen.</p></div>
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      <div class='card'><h3>Konzentrationstest</h3><p>Kurztest 5-10 Minuten. Ergebnis notieren, um später zu vergleichen.</p></div>
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>&#220;berlege zwei typische belastende Tage (z. B. Pr&#252;fungs- oder Trainingstag) und notiere konkret, wie Social Media an diesen Tagen laufen soll.</p>
 <p class='task-example'><span>Beispiel:</span> Pr&#252;fungstag: Social Media erst nach 19:00, max. 30 Minuten; Trainingstag: nur nach Training, keine Nutzung vor Hausaufgaben.</p>
@@ -71,10 +69,12 @@
 <p>Trage den w&#246;chentlichen Review-Termin in den Kalender ein.</p>
 <p class='task-example'><span>Beispiel:</span> Kalendereintrag: „Sonntag 19:30 – Social-Media Review (10 Min)“.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Klare, einfache Pl&#228;ne werden h&#228;ufiger umgesetzt als komplexe.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-20">Anhören</button>
-    <div class="rich-text" id="bonus-20"><p>des da vorigen Tages:</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Klare, einfache Pl&#228;ne werden h&#228;ufiger umgesetzt als komplexe.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-20"><p>des da vorigen Tages:</p>
 <p>Wenn du auf die letzten Tage zur&#252;ckblickst, merkst du vielleicht, dass sich dein Umgang mit dem Handy ver&#228;ndert hat. Vielleicht nicht dramatisch, aber sp&#252;rbar. Manche Dinge laufen ruhiger, anderes bewusster. Und vielleicht gibt es auch Bereiche, die noch wackelig sind. Genau darum geht es heute.</p>
 <p>Der heutige Tag ist kein Abschluss im Sinne von „fertig“. Er ist ein Innehalten. Ein Moment, um das, was du ausprobiert hast, als Ganzes zu betrachten. Nicht, um zu bewerten, sondern um zu pr&#252;fen, was sich f&#252;r dich tragf&#228;hig anf&#252;hlt – auch dann, wenn der Alltag wieder voller wird.</p>
 <p>Die Aufgabe heute hilft dir, dein pers&#246;nliches System noch einmal durchzugehen und f&#252;r die n&#228;chste Zeit &#252;berschaubar zu ordnen. Nicht als starres Regelwerk, sondern als Orientierung, auf die du zur&#252;ckgreifen kannst.</p>
@@ -95,8 +95,8 @@
 <p>Die Selbstauskunft rundet diesen Tag ab. Sie l&#228;dt dich ein, ehrlich einzusch&#228;tzen, ob dein Plan f&#252;r die n&#228;chste Woche realistisch wirkt. Nicht motivierend, nicht ideal – realistisch. Vielleicht braucht es Anpassungen. Vielleicht f&#252;hlt es sich stimmig an. Beides ist ein gutes Ergebnis.</p>
 <p>Am Ende dieses Tages hast du kein System „abgeschlossen“. Du hast dir ein Bild gemacht. Du hast verstanden, welche Rahmenbedingungen dir helfen und wo du flexibel bleiben willst. Dein Verhalten im Umgang mit digitalen Reizen ist dabei nachvollziehbar – gerade in fordernden Lernphasen. Und du bist ihm nicht ausgeliefert: Du hast Werkzeuge, Erfahrungen und ein Gef&#252;hl daf&#252;r entwickelt, was dir  gut tut .</p>
 <p>Die n&#228;chsten Tage werden zeigen, was  davon bleibt . Und das ist in Ordnung. Ver&#228;nderung muss nicht konstant sein, um wirksam zu sein. Manchmal reicht es, zu wissen, worauf man zur&#252;ckkommen kann.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was ist der Systemtest am Tag 20?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q20_1' value='A' id='q20_1_A'><span class='box'></span><span class='opt-text'>A: Ein Leistungstest</span></label>
@@ -126,10 +126,12 @@
 </div>
 <p class='quiz-explain' hidden>Klare, einfache Pl&#228;ne werden h&#228;ufiger umgesetzt als komplexe.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Was hat sich in diesen 20 Tagen f&#252;r mich bew&#228;hrt?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -145,6 +147,20 @@
 <p><strong>Frage 4:</strong> Worauf m&#246;chte ich in Zukunft zur&#252;ckkommen?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

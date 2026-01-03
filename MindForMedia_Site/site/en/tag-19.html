@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="kurs.html">Course</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Foreword</a>
-      <a href="abschluss.html">Finish</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Try for free</a>
     </div>
   </div>
 </header>
@@ -45,15 +37,21 @@
   <div class="container narrow">
     <p class="eyebrow">Day 19</p>
     <h1>Day 19</h1>
-    <div class="rich-text"><p>When you think back to yesterday, you may have noticed that apps feel different when they have a clear purpose again. Maybe it was easier to close them. Maybe you also noticed how long digital stimuli continue into the evening, even when your body is already tired.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Tasks</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflection</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>When you think back to yesterday, you may have noticed that apps feel different when they have a clear purpose again. Maybe it was easier to close them. Maybe you also noticed how long digital stimuli continue into the evening, even when your body is already tired.</p>
 <p>Today looks exactly at this transition: from day to night. Many people only notice in the evening how full their head actually is. You lie in bed, want to sleep, but thoughts jump, images appear, or the impulse comes to check the phone &quot;just for a moment.&quot; Not because something is missing, but because the day has not closed internally.</p>
 <p>Today is not about sleeping better or optimizing anything.</p>
 <p>It is about giving the evening a clear boundary so your system can actually come to rest.</p>
 <p>The task today is therefore kept calm. You reduce digital stimuli a bit in the evening and observe how your body and mind react. Without rules, without judgment. Just as an experience.</p>
 <p>The goal today is not falling asleep earlier, but settling better in the evening.</p></div>
-    
-    <h2>Tasks for today</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Tasks for today</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Task 1</h4>
 <p>Set a fixed time for your last social media use in the evening. * Example:* Social media only until 9:30 pm today.</p>
 </div>
@@ -69,14 +67,16 @@
 <h4>Bonus</h4>
 <p>Notice when the evening &quot;just scroll&quot; impulse appears. * Example:* It often comes right after homework.</p>
 </div></div>
-    <div class='fact'><strong>Fact of the day:</strong> Bright screen light signals activity to the body.</div>
-    <h2>Why this works</h2>
-    <button class="btn ghost tts" data-tts="bonus-19">Listen</button>
-    <div class="rich-text" id="bonus-19"><p>Sleep is a process, not a switch. Bright screens signal activity and keep the system in &quot;day mode.&quot; Reducing late-night phone use helps the transition.</p>
-<p>A calm evening routine gives your mind and body a chance to wind down.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fact of the day:</strong> Bright screen light signals activity to the body.</div>
+      <h2>Why this works</h2>
+      
+      <div class="rich-text" id="bonus-19"><p>Sleep is a process, not a switch. Bright screens signal activity and keep the system in day mode. Reducing late night phone use helps the transition.</p>
+<p>A calm evening routine gives your mind and body a chance to wind down. It is not about forcing sleep, but about closing the day gently.</p>
 <p>Side Fact: Bright screen light signals activity to the body.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Question 1:</strong> What does the bonus section say about sleep?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q19_1' value='A' id='q19_1_A'><span class='box'></span><span class='opt-text'>A: It is a switch</span></label>
@@ -106,10 +106,12 @@
 </div>
 <p class='quiz-explain' hidden>Better sleep improves self-control.</p>
 </div></div>
-    <button class="btn primary quiz-check">Check answers</button>
-    <h2>Reflection</h2>
-    <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Check answers</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflection</h2>
+      <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Question 1:</strong> How calm was my evening?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div>
@@ -125,6 +127,20 @@
 <p><strong>Question 4:</strong> What helped me settle down?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>How satisfied are you with the course?</label>
+          <input type="text" name="satisfaction" placeholder="e.g. 1-5">
+          <label>What did you like most?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Any suggestions for improvement?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

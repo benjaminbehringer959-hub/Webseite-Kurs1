@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,14 +37,20 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 9</p>
     <h1>Tag 9</h1>
-    <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, dass klare Zeitfenster Entscheidungen erleichtern k&#246;nnen. Vielleicht war der Tag dadurch strukturierter. Und vielleicht gab es am Abend trotzdem diesen Moment, in dem dein K&#246;rper m&#252;de war, dein Kopf aber noch nicht richtig abschalten wollte. So ein inneres „Eigentlich bin ich ersch&#246;pft, aber innerlich l&#228;uft noch etwas weiter.“</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, dass klare Zeitfenster Entscheidungen erleichtern k&#246;nnen. Vielleicht war der Tag dadurch strukturierter. Und vielleicht gab es am Abend trotzdem diesen Moment, in dem dein K&#246;rper m&#252;de war, dein Kopf aber noch nicht richtig abschalten wollte. So ein inneres „Eigentlich bin ich ersch&#246;pft, aber innerlich l&#228;uft noch etwas weiter.“</p>
 <p>Genau diese &#220;berg&#228;nge sind heute wichtig.</p>
 <p>Heute geht es um Reize. Genauer gesagt um das, was dein Handy und deine Umgebung deinem Gehirn am Abend noch anbieten. Farben, Bewegung und st&#228;ndige visuelle Abwechslung wirken oft st&#228;rker, als man bewusst merkt. Gerade nach einem langen Lern- oder Studientag kann das dazu f&#252;hren, dass der K&#246;rper Ruhe sucht, w&#228;hrend der Kopf weiter aktiv bleibt.</p>
 <p>Die Aufgabe heute ist deshalb bewusst ruhig gehalten. Du reduzierst visuelle Reize f&#252;r eine begrenzte Zeit und bereitest den Abend etwas anders vor. Nicht, um besser zu schlafen oder etwas zu optimieren, sondern um wahrzunehmen, wie sich weniger visuelle Stimulation anf&#252;hlt.</p>
 <p>Das Ziel heute ist nicht Disziplin, sondern Entlastung.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Aktiviere Graustufen f&#252;r 24–48 Stunden.</p>
 <p class='task-example'><span>Beispiel:</span> Farben komplett deaktivieren.</p>
@@ -72,10 +70,12 @@
 <p>Einschlafzeit notieren.</p>
 <p class='task-example'><span>Beispiel:</span> „22:45 Uhr eingeschlafen.“</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Helles Bildschirmlicht kann den nat&#252;rlichen M&#252;digkeitsprozess hinausz&#246;gern.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-9">Anhören</button>
-    <div class="rich-text" id="bonus-9"><p>Vielleicht kennst du diesen Moment: Du liegst abends im Bett, eigentlich m&#252;de, und scrollst noch ein bisschen. Nicht aus echtem Interesse, eher aus Gewohnheit. Nur noch dieses eine Video. Dann noch eins. Irgendwann legst du das Handy weg – und merkst, dass dein Kopf trotzdem noch arbeitet. Gedanken springen, Bilder tauchen auf, der Tag  ist irgendwie  noch nicht vorbei. Genau solche Abende stehen heute im Fokus.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Helles Bildschirmlicht kann den nat&#252;rlichen M&#252;digkeitsprozess hinausz&#246;gern.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-9"><p>Vielleicht kennst du diesen Moment: Du liegst abends im Bett, eigentlich m&#252;de, und scrollst noch ein bisschen. Nicht aus echtem Interesse, eher aus Gewohnheit. Nur noch dieses eine Video. Dann noch eins. Irgendwann legst du das Handy weg – und merkst, dass dein Kopf trotzdem noch arbeitet. Gedanken springen, Bilder tauchen auf, der Tag  ist irgendwie  noch nicht vorbei. Genau solche Abende stehen heute im Fokus.</p>
 <p>Ein wichtiger Faktor dabei ist visuelle Salienz. Damit ist gemeint, dass bestimmte Inhalte durch Farben, Bewegung und Kontraste besonders stark Aufmerksamkeit binden. Feeds sind genau darauf ausgelegt. Sie ziehen den Blick an, auch dann, wenn du innerlich schon ersch&#246;pft bist.</p>
 <p>Kurz gesagt: Was bunt und bewegt ist, h&#228;lt den Kopf wach.</p>
 <p>Das erkl&#228;rt auch, warum es abends oft schwerf&#228;llt, einfach aufzuh&#246;ren. Dein Gehirn verarbeitet weiterhin Reize, obwohl der K&#246;rper eigentlich Ruhe br&#228;uchte. Besonders helles Bildschirmlicht und schnelle Bildwechsel senden Signale von Aktivit&#228;t. Der K&#246;rper wird m&#252;de, der Kopf bekommt aber noch Wachsignale.</p>
@@ -92,8 +92,8 @@
 <p>Die optionale Bonusaufgabe mit Lesen statt Bildschirm greift genau diesen Punkt auf. Nicht, weil Lesen „besser“ w&#228;re, sondern weil es anders wirkt. Gleichm&#228;&#223;iger, langsamer, weniger fordernd f&#252;r die Augen. Auch hier gilt: Du beobachtest nur, was es mit dir macht.</p>
 <p>Am Ende dieses Tages hast du nichts verzichtet und nichts richtig oder falsch gemacht. Du hast erlebt, wie stark visuelle Reize deinen Abend pr&#228;gen – und dass du darauf Einfluss hast, ohne dich zu zwingen. Dein Verhalten ist dabei verst&#228;ndlich. Und genau dieses Verst&#228;ndnis schafft Spielraum. Du bist dem nicht ausgeliefert.</p>
 <p>Morgen geht es darum, diese Erfahrungen zusammenzuf&#252;hren und bewusst zu reflektieren, was sich in der ersten Woche f&#252;r dich gezeigt hat.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was bedeutet visuelle Salienz?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q9_1' value='A' id='q9_1_A'><span class='box'></span><span class='opt-text'>A: Inhalte sind leise</span></label>
@@ -123,10 +123,12 @@
 </div>
 <p class='quiz-explain' hidden>Ruhige &#220;berg&#228;nge helfen dem Gehirn, von Aktivit&#228;t in Erholung zu wechseln.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Wann habe ich heute auf Benachrichtigungen reagiert?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -142,6 +144,20 @@
 <p><strong>Frage 4:</strong> Wie hat sich das angef&#252;hlt?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

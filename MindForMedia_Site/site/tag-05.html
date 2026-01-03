@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 5</p>
     <h1>Tag 5</h1>
-    <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, ist dir vielleicht aufgefallen, dass bestimmte Ausl&#246;ser besonders zuverl&#228;ssig wirken. Vielleicht genau in dem Moment, in dem du bei einer Aufgabe festhingst oder innerlich Druck gesp&#252;rt hast. Heute setzt du genau dort an – nicht bei dir, sondern bei deiner Umgebung.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, ist dir vielleicht aufgefallen, dass bestimmte Ausl&#246;ser besonders zuverl&#228;ssig wirken. Vielleicht genau in dem Moment, in dem du bei einer Aufgabe festhingst oder innerlich Druck gesp&#252;rt hast. Heute setzt du genau dort an – nicht bei dir, sondern bei deiner Umgebung.</p>
 <p>Der Fokus dieses Tages liegt auf Benachrichtigungen. Nicht, weil sie „schlecht“ w&#228;ren, sondern weil sie oft ganz automatisch Aufmerksamkeit anziehen, noch bevor du &#252;berhaupt entscheiden kannst, worauf du dich konzentrieren willst. Vielleicht kennst du das: Du liest gerade einen Absatz, das Handy vibriert kurz, und auch wenn du nicht hinschaust, ist der Gedanke „Ich schaue gleich“ schon da.</p>
 <p>Die Aufgabe heute ist deshalb sehr konkret und bewusst begrenzt. Du schaltest  Notifications  f&#252;r  Social -Apps aus und deaktivierst Vorschauen. Danach beobachtest du, wie sich das im Alltag anf&#252;hlt. Es geht nicht darum, erreichbar oder nicht erreichbar zu sein, sondern darum wahrzunehmen, was sich ver&#228;ndert, wenn dein Handy ein kleines St&#252;ck leiser wird.</p>
 <p>Das Ziel heute ist nicht Kontrolle, sondern Erfahrung.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Deaktiviere alle Social-Media-Notifications.</p>
 <p class='task-example'><span>Beispiel:</span> Keine Push-Nachrichten mehr von TikTok oder Instagram.</p>
@@ -71,10 +69,12 @@
 <p>Messaging-Apps zeitlich einschr&#228;nken.</p>
 <p class='task-example'><span>Beispiel:</span> WhatsApp nur zu festen Zeiten &#246;ffnen.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Dauerhafte Alarmbereitschaft f&#252;hlt sich im Kopf schneller erm&#252;dend an, auch wenn &#228;u&#223;erlich wenig passiert.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-5">Anhören</button>
-    <div class="rich-text" id="bonus-5"><p>Vielleicht sitzt du gerade am Schreibtisch, lernst f&#252;r eine Klausur oder arbeitest an einer Abgabe. Du  bist eigentlich   ganz gut  drin, liest konzentriert – und dann vibriert dein Handy. Du schaust nicht einmal drauf, aber der Gedanke „Wer k&#246;nnte das sein?“ taucht auf. Selbst wenn du weiterliest, f&#252;hlt es sich an, als w&#228;re ein Teil deiner Aufmerksamkeit kurz weg. Genau solche Momente machen Benachrichtigungen so wirkungsvoll.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Dauerhafte Alarmbereitschaft f&#252;hlt sich im Kopf schneller erm&#252;dend an, auch wenn &#228;u&#223;erlich wenig passiert.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-5"><p>Vielleicht sitzt du gerade am Schreibtisch, lernst f&#252;r eine Klausur oder arbeitest an einer Abgabe. Du  bist eigentlich   ganz gut  drin, liest konzentriert – und dann vibriert dein Handy. Du schaust nicht einmal drauf, aber der Gedanke „Wer k&#246;nnte das sein?“ taucht auf. Selbst wenn du weiterliest, f&#252;hlt es sich an, als w&#228;re ein Teil deiner Aufmerksamkeit kurz weg. Genau solche Momente machen Benachrichtigungen so wirkungsvoll.</p>
 <p>Benachrichtigungen funktionieren wie automatische Unterbrechungen. Sie fragen nicht, ob es gerade passt. Sie tauchen einfach auf. Ein Ton, ein Aufleuchten oder eine Vorschau auf dem Sperrbildschirm reicht aus, um Aufmerksamkeit umzulenken.</p>
 <p>Kurz gesagt: Benachrichtigungen entscheiden oft f&#252;r dich, worauf du dich gerade konzentrierst.</p>
 <p>Das erkl&#228;rt auch, warum Lernen mit aktiven  Notifications  anstrengender wirkt, selbst wenn du „eigentlich kaum aufs Handy schaust“. Dein Gehirn bleibt im Hintergrund in Bereitschaft, &#228;hnlich wie wenn du beim Lernen st&#228;ndig damit rechnest, gleich aufgerufen zu werden. Diese dauerhafte Wachsamkeit kostet Energie.</p>
@@ -91,8 +91,8 @@
 <p>Die optionale Bonusaufgabe mit der Notfall-Kontaktliste kann dabei helfen, innerlich ruhiger zu bleiben. Wenn du wei&#223;t, dass wichtige Menschen dich trotzdem erreichen k&#246;nnen, f&#228;llt es vielen leichter, Benachrichtigungen loszulassen. Es geht nicht darum, jemanden auszuschlie&#223;en, sondern darum, Erreichbarkeit bewusst zu gestalten.</p>
 <p>Kurz gesagt: Du entscheidest, was wichtig ist – nicht dein Handy automatisch.</p>
 <p>Am Ende dieses Tages hast du keine Regel aufgestellt, die f&#252;r immer gelten muss. Du hast erlebt, wie kleine Ver&#228;nderungen an deiner Umgebung wirken k&#246;nnen. Dein Verhalten ist dabei nachvollziehbar und menschlich. Und genau diese Erfahrung ist wichtig f&#252;r den n&#228;chsten Schritt. Morgen geht es darum, diese Beobachtungen aufzugreifen und weiterzudenken – nicht, um mehr zu kontrollieren, sondern um deinen Alltag lernfreundlicher zu gestalten.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was entscheiden Benachrichtigungen oft f&#252;r dich?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q5_1' value='A' id='q5_1_A'><span class='box'></span><span class='opt-text'>A: Dein Ziel</span></label>
@@ -122,10 +122,12 @@
 </div>
 <p class='quiz-explain' hidden>Wenn &#228;u&#223;ere Reize leiser werden, fallen innere Impulse st&#228;rker auf.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Wie stark war mein Stresslevel heute gef&#252;hlt?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -141,6 +143,20 @@
 <p><strong>Frage 4:</strong> Wie hat mein K&#246;rper darauf reagiert?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

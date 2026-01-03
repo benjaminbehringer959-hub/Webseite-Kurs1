@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 11</p>
     <h1>Tag 11</h1>
-    <div class="rich-text"><p>Wenn du an die erste Woche zur&#252;ckdenkst, hast du wahrscheinlich gemerkt, dass sich vieles nicht durch „mehr Disziplin“ ver&#228;ndert hat, sondern durch kleine Rahmen. Vielleicht war da dieser Moment am Abend, in dem dein K&#246;rper m&#252;de war, dein Kopf aber noch nicht richtig abschalten wollte. Genau solche &#220;berg&#228;nge zeigen, wie stark Timing und Umgebung mitentscheiden.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an die erste Woche zur&#252;ckdenkst, hast du wahrscheinlich gemerkt, dass sich vieles nicht durch „mehr Disziplin“ ver&#228;ndert hat, sondern durch kleine Rahmen. Vielleicht war da dieser Moment am Abend, in dem dein K&#246;rper m&#252;de war, dein Kopf aber noch nicht richtig abschalten wollte. Genau solche &#220;berg&#228;nge zeigen, wie stark Timing und Umgebung mitentscheiden.</p>
 <p>Heute geht es um den Morgen. Der Tagesstart ist oft der Moment, in dem sich ganz leise entscheidet, wie dein Kopf in den Tag geht. Vielleicht kennst du das: Du wachst auf, greifst „nur kurz“ zum Handy, und bevor du richtig da bist, bist du schon in Nachrichten, Feeds oder Chatverl&#228;ufen. Danach f&#252;hlt sich der Start manchmal unklar an, ohne dass du genau sagen kannst, warum.</p>
 <p>Die Aufgabe heute ist deshalb bewusst einfach. Du l&#228;sst das Handy die ersten 20–30 Minuten nach dem Aufstehen weg und nutzt, wenn m&#246;glich, einen Offline-Wecker. Dazu planst du eine kurze Aktivit&#228;t, die deinen Kopf sortiert, zum Beispiel ein paar Minuten Stretching oder einen sehr kurzen Plan f&#252;r den Tag. Es geht nicht darum, etwas richtig zu machen, sondern wahrzunehmen, wie sich ein ruhigerer Start anf&#252;hlt.</p>
 <p>Das Ziel heute ist nicht Kontrolle, sondern Klarheit am Anfang des Tages.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Verzichte nach dem Aufstehen 20–30 Minuten auf Social Media.</p>
 <p class='task-example'><span>Beispiel:</span> Stelle den Wecker auf 7:00, leg das Handy ins Regal und nutze die Zeit f&#252;r Fr&#252;hst&#252;ck und einen schnellen Tagesplan im Heft (7:00–7:20).</p>
@@ -66,10 +64,12 @@
 <p>Lege das Handy nachts so hin, dass du es morgens nicht direkt greifst.</p>
 <p class='task-example'><span>Beispiel:</span> Handy abends auf den Schreibtisch legen statt aufs Kopfkissen.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Ein strukturierter Morgen reduziert oft die Anzahl kleiner Entscheidungen, die sp&#228;ter am Tag Energie kosten.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-11">Anhören</button>
-    <div class="rich-text" id="bonus-11"><p>Wenn du an die erste Woche zur&#252;ckdenkst, hast du wahrscheinlich gemerkt, dass sich vieles nicht durch „mehr Disziplin“ ver&#228;ndert hat, sondern durch kleine Rahmen. Vielleicht war da dieser Moment am Abend, in dem dein K&#246;rper m&#252;de war, dein Kopf aber noch nicht richtig abschalten wollte. Genau solche &#220;berg&#228;nge zeigen, wie stark Timing und Umgebung mitentscheiden.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Ein strukturierter Morgen reduziert oft die Anzahl kleiner Entscheidungen, die sp&#228;ter am Tag Energie kosten.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-11"><p>Wenn du an die erste Woche zur&#252;ckdenkst, hast du wahrscheinlich gemerkt, dass sich vieles nicht durch „mehr Disziplin“ ver&#228;ndert hat, sondern durch kleine Rahmen. Vielleicht war da dieser Moment am Abend, in dem dein K&#246;rper m&#252;de war, dein Kopf aber noch nicht richtig abschalten wollte. Genau solche &#220;berg&#228;nge zeigen, wie stark Timing und Umgebung mitentscheiden.</p>
 <p>Heute geht es um den Morgen. Der Tagesstart ist oft der Moment, in dem sich ganz leise entscheidet, wie dein Kopf in den Tag geht. Vielleicht kennst du das: Du wachst auf, greifst „nur kurz“ zum Handy, und bevor du richtig da bist, bist du schon in Nachrichten, Feeds oder Chatverl&#228;ufen. Danach f&#252;hlt sich der Start manchmal unklar an, ohne dass du genau sagen kannst, warum.</p>
 <p>Die Aufgabe heute ist deshalb bewusst einfach. Du l&#228;sst das Handy die ersten 20–30 Minuten nach dem Aufstehen weg und nutzt, wenn m&#246;glich, einen Offline-Wecker. Dazu planst du eine kurze Aktivit&#228;t, die deinen Kopf sortiert, zum Beispiel ein paar Minuten Stretching oder einen sehr kurzen Plan f&#252;r den Tag. Es geht nicht darum, etwas richtig zu machen, sondern wahrzunehmen, wie sich ein ruhigerer Start anf&#252;hlt.</p>
 <p>Das Ziel heute ist nicht Kontrolle, sondern Klarheit am Anfang des Tages.</p>
@@ -89,8 +89,8 @@
 <p>Die Bonusaufgabe mit der kleinen Morgen- To -do ist ebenfalls kein System und keine Verpflichtung. Ein paar Zeilen k&#246;nnen reichen, um dem Tag ein Gef&#252;hl von Richtung zu geben – gerade in Phasen, in denen viel gleichzeitig im Kopf ist.</p>
 <p>Am Ende dieses Tages hast du nichts „durchgezogen“ und nichts bewiesen. Du hast erlebt, dass ein Morgen anders starten kann, wenn du die ersten Minuten sch&#252;tzt. Dein Verhalten ist dabei nachvollziehbar und menschlich. Und du bist dem nicht ausgeliefert – du kannst den Start so gestalten, dass er dich tr&#228;gt, statt dich sofort zu &#252;berfluten.</p>
 <p>Morgen geht es darum, diesen Effekt in deine Lernzeit zu holen, indem du dem Handy physisch etwas mehr Abstand gibst.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was beschreibt der Primacy-Effekt?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q11_1' value='A' id='q11_1_A'><span class='box'></span><span class='opt-text'>A: Das Ende z&#228;hlt am meisten</span></label>
@@ -120,10 +120,12 @@
 </div>
 <p class='quiz-explain' hidden>Du ver&#228;nderst den Startmoment, nicht dich.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Wie habe ich meinen Morgen heute erlebt?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -139,6 +141,20 @@
 <p><strong>Frage 4:</strong> Was hat mein Morgen mit dem restlichen Tag gemacht?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

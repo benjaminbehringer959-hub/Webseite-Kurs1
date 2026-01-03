@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="kurs.html">Course</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Foreword</a>
-      <a href="abschluss.html">Finish</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Try for free</a>
     </div>
   </div>
 </header>
@@ -45,14 +37,20 @@
   <div class="container narrow">
     <p class="eyebrow">Day 9</p>
     <h1>Day 9</h1>
-    <div class="rich-text"><p>When you think back to yesterday, you may have noticed that clear time windows can make decisions easier. Maybe the day felt more structured. And maybe there was still that moment in the evening when your body was tired but your mind did not really shut off. That inner sense of &quot;I am exhausted, but something keeps running.&quot;</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Tasks</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflection</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>When you think back to yesterday, you may have noticed that clear time windows can make decisions easier. Maybe the day felt more structured. And maybe there was still that moment in the evening when your body was tired but your mind did not really shut off. That inner sense of &quot;I am exhausted, but something keeps running.&quot;</p>
 <p>Those transitions are important today.</p>
 <p>Today is about stimuli. More precisely, about what your phone and environment still offer your brain in the evening. Colors, motion, and constant visual change often have a stronger effect than you notice. Especially after a long study day, this can lead to a body that seeks rest while the mind stays active.</p>
 <p>The task today is therefore intentionally calm. You reduce visual stimulation for a limited time and prepare the evening a bit differently. Not to sleep better or optimize anything, but to notice how less visual stimulation feels.</p>
 <p>The goal today is not discipline, but relief.</p></div>
-    
-    <h2>Tasks for today</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Tasks for today</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Task 1</h4>
 <p>Enable grayscale for 24-48 hours. * Example:* Turn off colors completely.</p>
 </div>
@@ -68,14 +66,17 @@
 <h4>Bonus</h4>
 <p>Note your time of falling asleep. * Example:* &quot;Asleep at 10:45 pm.&quot;</p>
 </div></div>
-    <div class='fact'><strong>Fact of the day:</strong> Bright screen light can delay natural sleepiness.</div>
-    <h2>Why this works</h2>
-    <button class="btn ghost tts" data-tts="bonus-9">Listen</button>
-    <div class="rich-text" id="bonus-9"><p>Visual salience pulls attention. Bright colors and motion keep the brain engaged, especially in the evening. Grayscale reduces the pull without needing willpower.</p>
-<p>A short screen-free evening window helps your system transition from activity to rest.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fact of the day:</strong> Bright screen light can delay natural sleepiness.</div>
+      <h2>Why this works</h2>
+      
+      <div class="rich-text" id="bonus-9"><p>Visual salience pulls attention. Bright colors and motion keep the brain engaged, especially in the evening. When the day is already full, this can keep your system running longer than you want.</p>
+<p>Grayscale reduces the pull without needing willpower. It makes the screen less rewarding and therefore less sticky.</p>
+<p>A short screen free evening window helps your system transition from activity to rest. You are not optimizing sleep, you are giving your mind a softer landing.</p>
 <p>Side Fact: Bright screen light can delay natural sleepiness.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Question 1:</strong> What does visual salience mean?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q9_1' value='A' id='q9_1_A'><span class='box'></span><span class='opt-text'>A: Content is quiet</span></label>
@@ -105,10 +106,12 @@
 </div>
 <p class='quiz-explain' hidden>It helps the brain move from activity to rest.</p>
 </div></div>
-    <button class="btn primary quiz-check">Check answers</button>
-    <h2>Reflection</h2>
-    <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Check answers</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflection</h2>
+      <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Question 1:</strong> When did I react to notifications today?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div>
@@ -124,6 +127,20 @@
 <p><strong>Question 4:</strong> How did that feel?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>How satisfied are you with the course?</label>
+          <input type="text" name="satisfaction" placeholder="e.g. 1-5">
+          <label>What did you like most?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Any suggestions for improvement?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

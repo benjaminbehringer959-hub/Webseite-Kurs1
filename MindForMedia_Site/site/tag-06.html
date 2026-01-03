@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 6</p>
     <h1>Tag 6</h1>
-    <div class="rich-text"><p>Wenn du an die letzten Tage zur&#252;ckdenkst, hast du vielleicht gemerkt, dass viele Handygriffe nicht geplant sind. Sie passieren oft in kleinen Momenten dazwischen. Zum Beispiel, wenn du beim Lernen kurz h&#228;ngen bleibst, einen Satz zweimal liest oder innerlich m&#252;de wirst. Ohne viel Nachdenken ist das Handy pl&#246;tzlich entsperrt.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an die letzten Tage zur&#252;ckdenkst, hast du vielleicht gemerkt, dass viele Handygriffe nicht geplant sind. Sie passieren oft in kleinen Momenten dazwischen. Zum Beispiel, wenn du beim Lernen kurz h&#228;ngen bleibst, einen Satz zweimal liest oder innerlich m&#252;de wirst. Ohne viel Nachdenken ist das Handy pl&#246;tzlich entsperrt.</p>
 <p>Heute geht es genau um diesen Moment. Nicht darum, dein Verhalten zu &#228;ndern, sondern darum, was dein Handy dir anbietet, sobald du es in die Hand nimmst. Der Startbildschirm ist dabei entscheidend. Er bestimmt mit, welche Apps du siehst – und welche du automatisch &#246;ffnest.</p>
 <p>Die Aufgabe heute ist deshalb sehr praktisch. Du ver&#228;nderst deinen Homescreen so, dass impulsives &#214;ffnen ein kleines St&#252;ck weniger automatisch wird.  Social -Apps wandern weiter nach hinten oder in Ordner, Widgets verschwinden, Lern- oder Produktiv-Apps kommen nach vorne. Es geht nicht darum, etwas zu verhindern, sondern zu beobachten, was sich dadurch verschiebt.</p>
 <p>Das Ziel heute ist nicht Kontrolle, sondern Wahrnehmung: zu sp&#252;ren, wie sehr Gestaltung Verhalten beeinflusst.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Verschiebe Social-Media-Apps in einen Ordner oder auf eine hintere Seite.</p>
 <p class='task-example'><span>Beispiel:</span> Ordner „Ablenkung“ auf Seite 3.</p>
@@ -71,10 +69,12 @@
 <p>Vorher-/Nachher-Foto machen.</p>
 <p class='task-example'><span>Beispiel:</span> Screenshot des neuen Homescreens.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Menschen greifen h&#228;ufiger zu dem, was ohne Nachdenken erreichbar ist.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-6">Anhören</button>
-    <div class="rich-text" id="bonus-6"><p>Vielleicht kennst du diesen Moment: Du entsperrst dein Handy eigentlich ohne konkreten Plan. Der Bildschirm geht an, und noch bevor du bewusst entschieden hast, ist eine App offen. Oft ist es genau die, die ganz vorne liegt. Nicht, weil sie wichtig ist, sondern weil sie da ist.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Menschen greifen h&#228;ufiger zu dem, was ohne Nachdenken erreichbar ist.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-6"><p>Vielleicht kennst du diesen Moment: Du entsperrst dein Handy eigentlich ohne konkreten Plan. Der Bildschirm geht an, und noch bevor du bewusst entschieden hast, ist eine App offen. Oft ist es genau die, die ganz vorne liegt. Nicht, weil sie wichtig ist, sondern weil sie da ist.</p>
 <p>An dieser Stelle wird klar, dass Verhalten nicht erst im Kopf beginnt. Es beginnt dort, wo Entscheidungen vorbereitet werden. In der Verhaltensforschung spricht man dabei von Choice Architecture – also davon, wie Auswahlm&#246;glichkeiten angeordnet sind.</p>
 <p>Kurz gesagt: Die Anordnung von Dingen beeinflusst, wof&#252;r du dich entscheidest, ohne dass du es merkst.</p>
 <p>&#220;bertragen auf dein Handy hei&#223;t das: Apps, die sichtbar, bunt und direkt erreichbar sind, werden h&#228;ufiger ge&#246;ffnet. Nicht aus Absicht, sondern aus Gewohnheit. Wenn  Social -Apps auf der ersten Seite liegen, reicht oft ein kurzer Leerlaufmoment, etwa zwischen zwei Lernaufgaben, und der Impuls setzt sich durch.</p>
@@ -93,8 +93,8 @@
 <p>Kurz gesagt: Ein Impuls darf da sein, ohne etwas &#252;ber dich zu bewerten.</p>
 <p>Die Selbstreflexion am Ende des Tages greift genau diesen Punkt auf. Wie oft hast du versucht, die neue H&#252;rde zu &#252;berwinden? Diese Frage ist neutral. Sie soll nichts beurteilen. Sie hilft dir nur, dein Verhalten besser einzuordnen.</p>
 <p>Am Ende dieses Tages hast du nichts verboten und nichts gel&#246;scht. Du hast erlebt, dass dein Alltag stark von Gestaltung gepr&#228;gt ist – und dass du daran kleine Stellschrauben hast. Dein Verhalten ist dabei verst&#228;ndlich und menschlich. Du bist dem nicht ausgeliefert. Morgen geht es darum, was du tun kannst, wenn der Impuls trotz allem auftaucht – also um Ersatzhandlungen, die im Alltag greifen, ohne Druck zu erzeugen.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was beschreibt Choice Architecture?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q6_1' value='A' id='q6_1_A'><span class='box'></span><span class='opt-text'>A: Belohnungen</span></label>
@@ -124,10 +124,12 @@
 </div>
 <p class='quiz-explain' hidden>Sichtbarkeit wirkt wie ein stiller Hinweis auf das, was du vorhattest.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Wie habe ich meine Pausen heute erlebt?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -143,6 +145,20 @@
 <p><strong>Frage 4:</strong> Was hat mir geholfen, wieder reinzukommen?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

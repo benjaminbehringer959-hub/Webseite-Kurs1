@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="kurs.html">Course</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Foreword</a>
-      <a href="abschluss.html">Finish</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Try for free</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Day 4</p>
     <h1>Day 4</h1>
-    <div class="rich-text"><p>When you think back to yesterday, you may have noticed that some types of phone use cost more energy than others. Maybe you reached for the phone especially when studying felt uncomfortable or when you did not know how to continue. Those moments matter today.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Tasks</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflection</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>When you think back to yesterday, you may have noticed that some types of phone use cost more energy than others. Maybe you reached for the phone especially when studying felt uncomfortable or when you did not know how to continue. Those moments matter today.</p>
 <p>Today is about looking more closely at what actually makes you pick up the phone. The phone itself is not the center; the triggers behind it are. Often there are very specific situations or feelings that trigger the impulse, sometimes so quickly that you hardly notice.</p>
 <p>The task today helps you make those triggers visible. You write down your most important triggers and think of one possible replacement action for each. Not as a strict rule, but as an idea. At the end you try one of those replacement actions once on purpose.</p>
 <p>The goal today is not to avoid impulses, but to understand them better.</p></div>
-    
-    <h2>Tasks for today</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Tasks for today</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Task 1</h4>
 <p>Write down the trigger before each opening. * Example:* &quot;Stress after homework.&quot;</p>
 </div>
@@ -67,14 +65,18 @@
 <h4>Bonus</h4>
 <p>Avoid one trigger on purpose. * Example:* Do not take your phone to bed.</p>
 </div></div>
-    <div class='fact'><strong>Fact of the day:</strong> In stressful moments the brain automatically searches for quick relief.</div>
-    <h2>Why this works</h2>
-    <button class="btn ghost tts" data-tts="bonus-4">Listen</button>
-    <div class="rich-text" id="bonus-4"><p>Impulses are often triggered by specific moments or feelings, not by the phone itself. When you name your triggers, you create space between the impulse and the action.</p>
-<p>A replacement action does not fight the impulse. It redirects it for a moment and gives your system a different path.</p>
-<p>Side Fact: In stressful moments the brain automatically searches for quick relief.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fact of the day:</strong> In stressful moments the brain automatically searches for quick relief.</div>
+      <h2>Why this works</h2>
+      
+      <div class="rich-text" id="bonus-4"><p>Impulses are often triggered by specific moments or feelings, not by the phone itself. When you name your triggers, you create space between the impulse and the action.</p>
+<p>Many triggers are subtle: being stuck, feeling pressured, feeling bored, or feeling unsure how to start. These micro moments are where the phone becomes a quick relief.</p>
+<p>A replacement action does not fight the impulse. It redirects it for a moment and gives your system a different path. It can be as small as standing up, getting water, or writing down the next tiny step.</p>
+<p>Side Fact: In stressful moments the brain automatically searches for quick relief.</p>
+<p>This is why the task is not about forcing control. It is about testing a different response and seeing what it changes.</p></div>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Question 1:</strong> What is a trigger?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q4_1' value='A' id='q4_1_A'><span class='box'></span><span class='opt-text'>A: An app</span></label>
@@ -104,10 +106,12 @@
 </div>
 <p class='quiz-explain' hidden>A replacement action creates a short pause and a different path.</p>
 </div></div>
-    <button class="btn primary quiz-check">Check answers</button>
-    <h2>Reflection</h2>
-    <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Check answers</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflection</h2>
+      <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Question 1:</strong> When did studying feel easier than usual today?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div>
@@ -123,6 +127,20 @@
 <p><strong>Question 4:</strong> Was there a moment of clarity?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>How satisfied are you with the course?</label>
+          <input type="text" name="satisfaction" placeholder="e.g. 1-5">
+          <label>What did you like most?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Any suggestions for improvement?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

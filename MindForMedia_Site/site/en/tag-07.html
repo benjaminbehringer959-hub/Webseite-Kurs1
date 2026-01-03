@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="kurs.html">Course</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Foreword</a>
-      <a href="abschluss.html">Finish</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Try for free</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Day 7</p>
     <h1>Day 7</h1>
-    <div class="rich-text"><p>When you think back to yesterday, you may have noticed that even with more distance on the home screen, impulses do not simply disappear. Maybe there was that short moment while studying: you got stuck, your head felt tired, and the thought of the phone showed up. Not loud, more in the background.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Tasks</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflection</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>When you think back to yesterday, you may have noticed that even with more distance on the home screen, impulses do not simply disappear. Maybe there was that short moment while studying: you got stuck, your head felt tired, and the thought of the phone showed up. Not loud, more in the background.</p>
 <p>Today is about exactly that moment. Not about avoiding or judging it, but about how you can meet it when it shows up. Impulses are not a system error. They belong to learning just like focus and breaks do.</p>
 <p>The task today invites you to get to know replacement actions. Small things you can do when the impulse is there. Not to remove it, but to feel what happens when you offer it something else for a moment.</p>
 <p>The goal today is not control, but experience.</p></div>
-    
-    <h2>Tasks for today</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Tasks for today</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Task 1</h4>
 <p>Create a list with at least six replacement actions. * Example:* Stretch, drink water, step outside.</p>
 </div>
@@ -67,14 +65,18 @@
 <h4>Bonus</h4>
 <p>Mark the most effective replacement action. * Example:* Movement helps most.</p>
 </div></div>
-    <div class='fact'><strong>Fact of the day:</strong> Even short physical activity can briefly stabilize attention.</div>
-    <h2>Why this works</h2>
-    <button class="btn ghost tts" data-tts="bonus-7">Listen</button>
-    <div class="rich-text" id="bonus-7"><p>The urge to scroll often seeks quick relief, not content. Replacement actions give the impulse another direction without suppression.</p>
-<p>Small physical actions can reset attention and give you a short buffer to choose what you really want to do.</p>
-<p>Side Fact: Even short physical activity can briefly stabilize attention.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fact of the day:</strong> Even short physical activity can briefly stabilize attention.</div>
+      <h2>Why this works</h2>
+      
+      <div class="rich-text" id="bonus-7"><p>The urge to scroll often seeks quick relief, not content. It is a short break signal in the brain, not a real need for information.</p>
+<p>Replacement actions give that impulse another direction without suppression. A short walk to the kitchen, a few deep breaths, a stretch, or writing down the next tiny step can be enough to reset your attention.</p>
+<p>Even small physical actions change the state of the body and make it easier to choose consciously.</p>
+<p>Side Fact: Even short physical activity can briefly stabilize attention.</p>
+<p>The goal is not to erase the impulse, but to learn that you can respond differently.</p></div>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Question 1:</strong> What is your brain seeking in the impulse according to the bonus section?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q7_1' value='A' id='q7_1_A'><span class='box'></span><span class='opt-text'>A: The phone itself</span></label>
@@ -104,10 +106,12 @@
 </div>
 <p class='quiz-explain' hidden>A short movement can reset attention for a moment.</p>
 </div></div>
-    <button class="btn primary quiz-check">Check answers</button>
-    <h2>Reflection</h2>
-    <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Check answers</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflection</h2>
+      <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Question 1:</strong> What stood out to me most this week?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div>
@@ -131,6 +135,20 @@
 <p><strong>Question 6:</strong> What do I want to take with me from this week?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>How satisfied are you with the course?</label>
+          <input type="text" name="satisfaction" placeholder="e.g. 1-5">
+          <label>What did you like most?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Any suggestions for improvement?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

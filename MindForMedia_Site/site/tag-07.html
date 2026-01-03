@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 7</p>
     <h1>Tag 7</h1>
-    <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, dass selbst mit mehr Abstand auf dem Homescreen Impulse nicht einfach verschwinden. Vielleicht war da wieder dieser kurze Moment beim Lernen: Du bleibst an einer Stelle h&#228;ngen, merkst, dass dein Kopf m&#252;de wird, und der Gedanke ans Handy taucht auf. Nicht laut, eher nebenbei.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, dass selbst mit mehr Abstand auf dem Homescreen Impulse nicht einfach verschwinden. Vielleicht war da wieder dieser kurze Moment beim Lernen: Du bleibst an einer Stelle h&#228;ngen, merkst, dass dein Kopf m&#252;de wird, und der Gedanke ans Handy taucht auf. Nicht laut, eher nebenbei.</p>
 <p>Heute geht es genau um diesen Moment. Nicht darum, ihn zu vermeiden oder zu bewerten, sondern darum, wie du ihm begegnen kannst, wenn er auftaucht. Denn Impulse sind kein Fehler im System. Sie geh&#246;ren zum Lernen genauso dazu wie Konzentration und Pausen.</p>
 <p>Die Aufgabe heute l&#228;dt dich ein, Ersatzhandlungen kennenzulernen. Kleine Dinge, die du tun kannst, wenn der Impuls da ist. Nicht, um ihn wegzumachen, sondern um zu sp&#252;ren, was passiert, wenn du ihm kurz etwas anderes anbietest.</p>
 <p>Das Ziel heute ist nicht Kontrolle, sondern Erfahrung.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Erstelle eine Liste mit mindestens sechs Ersatzhandlungen.</p>
 <p class='task-example'><span>Beispiel:</span> Dehnen, Wasser trinken, kurz rausgehen.</p>
@@ -71,10 +69,12 @@
 <p>Wirksamste Ersatzhandlung markieren.</p>
 <p class='task-example'><span>Beispiel:</span> Bewegung hilft am besten.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Schon kurze k&#246;rperliche Aktivit&#228;t kann die Aufmerksamkeit f&#252;r einen Moment stabilisieren.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-7">Anhören</button>
-    <div class="rich-text" id="bonus-7"><p>Vielleicht sitzt du &#252;ber deinen Unterlagen, liest einen Abschnitt zum zweiten oder dritten Mal und merkst, dass es gerade nicht richtig weitergeht. Dein Blick schweift kurz ab, und innerlich entsteht dieser bekannte Gedanke: Ich schaue nur kurz. Wenn du das kennst, ist das nichts Ungew&#246;hnliches. Genau solche &#220;bergangsmomente stehen heute im Mittelpunkt.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Schon kurze k&#246;rperliche Aktivit&#228;t kann die Aufmerksamkeit f&#252;r einen Moment stabilisieren.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-7"><p>Vielleicht sitzt du &#252;ber deinen Unterlagen, liest einen Abschnitt zum zweiten oder dritten Mal und merkst, dass es gerade nicht richtig weitergeht. Dein Blick schweift kurz ab, und innerlich entsteht dieser bekannte Gedanke: Ich schaue nur kurz. Wenn du das kennst, ist das nichts Ungew&#246;hnliches. Genau solche &#220;bergangsmomente stehen heute im Mittelpunkt.</p>
 <p>An dieser Stelle wird klar, warum Impulse so zuverl&#228;ssig auftauchen. Sie entstehen oft nicht aus echtem Interesse am Handy, sondern aus dem Wunsch nach einer kurzen Erleichterung. In der Verhaltenspsychologie spricht man dabei von substitutiver Belohnung. Gemeint ist damit, dass eine Handlung durch eine andere ersetzt wird, weil sie f&#252;r einen Moment Entlastung bringt – &#228;hnlich wie man etwas Kleines tut, um einen unangenehmen Zustand zu &#252;berbr&#252;cken.</p>
 <p>Kurz gesagt: Dein Gehirn sucht nicht das Handy, sondern einen kurzen Moment Erleichterung.</p>
 <p>Scrollen erf&#252;llt genau diese Funktion. Es ist sofort verf&#252;gbar, erfordert keine Entscheidung und unterbricht den inneren Druck. Genau deshalb wirkt es so automatisch. Ersatzhandlungen setzen an derselben Stelle an. Sie nehmen den Impuls ernst, ohne ihm sofort nachzugeben.</p>
@@ -91,8 +91,8 @@
 <p>Die Selbstauskunft am Ende des Tages hilft dir, diese Erfahrungen einzuordnen. Welche Ersatzhandlung hat sich f&#252;r dich am stimmigsten angef&#252;hlt? Nicht im Sinne von Effektivit&#228;t, sondern im Sinne von Passung. Diese Frage st&#228;rkt den Blick auf deine eigenen M&#246;glichkeiten.</p>
 <p>Die optionale Bonusaufgabe greift genau das auf. Wenn du eine Ersatzhandlung notierst, die dir geholfen hat, h&#228;ltst du fest, dass Alternativen existieren. Nicht als Regel, sondern als Erinnerung.</p>
 <p>Am Ende dieses Tages hast du keinen Impuls bek&#228;mpft. Du hast erlebt, dass zwischen Impuls und Handlung ein kleiner Raum entstehen kann. Dein Verhalten ist dabei verst&#228;ndlich und menschlich. Und genau dieses Erleben st&#228;rkt das Gef&#252;hl, nicht ausgeliefert zu sein. Morgen geht es darum, diesen Raum zeitlich zu ordnen, damit Entscheidungen im Alltag leichter werden.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was sucht dein Gehirn beim Impuls laut Bonuswissen?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q7_1' value='A' id='q7_1_A'><span class='box'></span><span class='opt-text'>A: Das Handy selbst</span></label>
@@ -122,10 +122,12 @@
 </div>
 <p class='quiz-explain' hidden>Schon kurze Bewegung kann die Aufmerksamkeit kurzfristig stabilisieren.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Was ist mir diese Woche besonders aufgefallen?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -149,6 +151,20 @@
 <p><strong>Frage 6:</strong> Was m&#246;chte ich aus dieser Woche mitnehmen?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,14 +37,20 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 15</p>
     <h1>Tag 15</h1>
-    <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, dass Lernen sich anders anf&#252;hlt, wenn du nicht allein damit bist. Vielleicht war der Einstieg leichter. Vielleicht hast du dich etwas getragener gef&#252;hlt. Und vielleicht ist dir auch aufgefallen, wie viel von deiner Aufmerksamkeit nicht nur vom Lernen selbst beansprucht wird, sondern von allem, was nebenbei noch auf dich einwirkt.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, dass Lernen sich anders anf&#252;hlt, wenn du nicht allein damit bist. Vielleicht war der Einstieg leichter. Vielleicht hast du dich etwas getragener gef&#252;hlt. Und vielleicht ist dir auch aufgefallen, wie viel von deiner Aufmerksamkeit nicht nur vom Lernen selbst beansprucht wird, sondern von allem, was nebenbei noch auf dich einwirkt.</p>
 <p>Vielleicht kam zwischendurch auch dieser Gedanke: Warum f&#252;hlt sich mein Kopf eigentlich schon voll an, obwohl ich noch gar nicht richtig angefangen habe?</p>
 <p>Heute richtet sich der Blick genau darauf. Nicht auf dein Verhalten, sondern auf den Input, der jeden Tag auf dich einstr&#246;mt. Nachrichten, Feeds, Updates, Stories – vieles davon nimmst du nur nebenbei wahr. Und trotzdem arbeitet dein Kopf damit weiter.</p>
 <p>Die Aufgabe heute ist deshalb ruhig und konkret. Du sortierst deinen digitalen Input ein wenig neu. Nicht, um weniger zu wissen oder etwas zu verpassen, sondern um deinem Kopf wieder mehr &#220;bersicht zu geben.</p>
 <p>Das Ziel heute ist nicht Verzicht, sondern Entlastung durch Ordnung.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Entfolge heute mindestens 8–10 Accounts, die dich nur ablenken.</p>
 <p class='task-example'><span>Beispiel:</span> Entfolge Promi- und Meme-Seiten, die du nur scrollst.</p>
@@ -72,10 +70,12 @@
 <p>Lies heute 10–15 Seiten in einem gedruckten Buch.</p>
 <p class='task-example'><span>Beispiel:</span> Kapitel im Schulbuch oder Sachbuch.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Aufmerksamkeit ist begrenzt und nicht unbegrenzt erneuerbar.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-15">Anhören</button>
-    <div class="rich-text" id="bonus-15"><p>Vielleicht kennst du diesen Moment: Du willst lernen oder gerade anfangen, und merkst, dass dein Kopf schon besch&#228;ftigt ist. Nicht mit dem Stoff vor dir, sondern mit Bildern, Gespr&#228;chsfetzen aus Chats, kurzen Videos oder Schlagzeilen, die du irgendwann am Tag gesehen hast. Nichts davon war  wirklich wichtig . Und trotzdem ist es da. Irgendwie f&#252;hlt sich alles schon voll an.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Aufmerksamkeit ist begrenzt und nicht unbegrenzt erneuerbar.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-15"><p>Vielleicht kennst du diesen Moment: Du willst lernen oder gerade anfangen, und merkst, dass dein Kopf schon besch&#228;ftigt ist. Nicht mit dem Stoff vor dir, sondern mit Bildern, Gespr&#228;chsfetzen aus Chats, kurzen Videos oder Schlagzeilen, die du irgendwann am Tag gesehen hast. Nichts davon war  wirklich wichtig . Und trotzdem ist es da. Irgendwie f&#252;hlt sich alles schon voll an.</p>
 <p>Genau hier zeigt sich, warum Informationsmenge eine Rolle spielt. Dein Gehirn verarbeitet nicht nur das, worauf du dich bewusst konzentrierst. Es verarbeitet auch vieles im Hintergrund. Je mehr ungefilterter Input hereinkommt, desto schwerer f&#228;llt es, bei einer Sache zu bleiben.</p>
 <p>In der Kognitionspsychologie spricht man von kognitiver Belastung. Das klingt technisch, meint aber etwas sehr Allt&#228;gliches: Wenn zu viele Informationen gleichzeitig da sind, wird Denken anstrengender.</p>
 <p>Kurz gesagt: Zu viel Input macht den Kopf schneller m&#252;de.</p>
@@ -95,8 +95,8 @@
 <p>Die Selbstauskunft am Ende des Tages hilft dir, dein Erleben einzuordnen. F&#252;hlst du dich etwas ruhiger? Vielleicht nur minimal. Vielleicht noch gar nicht. Jede Antwort ist eine Information, kein Urteil.</p>
 <p>Am Ende dieses Tages hast du nichts „ausgemistet“. Du hast deinem Kopf Raum gegeben. Du hast erlebt, dass Aufmerksamkeit nicht nur von Anstrengung abh&#228;ngt, sondern stark davon, wie viel gleichzeitig an ihr zieht. Dein Verhalten ist dabei verst&#228;ndlich. Und du bist dem nicht ausgeliefert: Du kannst Input so ordnen, dass Denken wieder leichter wird.</p>
 <p>Morgen geht es darum, diese Entlastung in kleine Routinen zu &#252;berf&#252;hren, die sich von selbst stabilisieren.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was bedeutet kognitive Belastung?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q15_1' value='A' id='q15_1_A'><span class='box'></span><span class='opt-text'>A: Wenig Informationen</span></label>
@@ -126,10 +126,12 @@
 </div>
 <p class='quiz-explain' hidden>Die Entscheidung ist getroffen und muss nicht st&#228;ndig neu auftauchen.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Wie voll f&#252;hlte sich mein Kopf heute an?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -145,6 +147,20 @@
 <p><strong>Frage 4:</strong> Was hat mir &#220;bersicht gegeben?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

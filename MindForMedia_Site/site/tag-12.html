@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Start</a>
-      <a href="kurs.html">Kurs</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Vorwort</a>
-      <a href="abschluss.html">Abschluss</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Tag 12</p>
     <h1>Tag 12</h1>
-    <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, wie viel schon am Anfang des Tages passiert, bevor du &#252;berhaupt „richtig“ gestartet bist. Vielleicht war der Morgen klarer, vielleicht auch nur ein kleines bisschen ruhiger. Vielleicht hast du auch gemerkt, dass es weniger um Willenskraft  ging,  als um den Rahmen, den du dir gegeben hast.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Aufgaben</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflexion</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>Wenn du an gestern zur&#252;ckdenkst, hast du vielleicht gemerkt, wie viel schon am Anfang des Tages passiert, bevor du &#252;berhaupt „richtig“ gestartet bist. Vielleicht war der Morgen klarer, vielleicht auch nur ein kleines bisschen ruhiger. Vielleicht hast du auch gemerkt, dass es weniger um Willenskraft  ging,  als um den Rahmen, den du dir gegeben hast.</p>
 <p>Heute nimmst du genau diesen Gedanken mit in deine Lernzeit. Denn beim Lernen gibt es oft diese stillen Momente, in denen du kurz h&#228;ngen bleibst, einen Absatz nicht sofort verstehst oder merkst, dass deine Gedanken anfangen zu wandern. In solchen Sekunden ist das Handy besonders „nah“ – nicht unbedingt, weil du es benutzen willst, sondern weil es als schnelle Unterbrechung verf&#252;gbar ist.</p>
 <p>Die Aufgabe heute ist deshalb sehr konkret und bewusst klein. Du lernst einmal ohne Handy in Sicht, f&#252;r einen klar begrenzten Lernblock. Das Handy liegt in einer Box, in einer Schublade oder in einem anderen Zimmer. Es geht nicht darum, besonders konzentriert zu sein oder „durchzuziehen“, sondern wahrzunehmen, wie sich Lernen anf&#252;hlt, wenn dieser Reiz nicht st&#228;ndig im Blickfeld ist.</p>
 <p>Das Ziel heute ist nicht Leistung, sondern eine Erfahrung mit Abstand.</p></div>
-    
-    <h2>Aufgaben des Tages</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Aufgaben des Tages</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Aufgabe 1</h4>
 <p>Richte heute einen festen Lernplatz ohne Handy-Sicht ein.</p>
 <p class='task-example'><span>Beispiel:</span> Schreibtisch: nur Heft, Buch, Stift, Wasser — Handy im anderen Zimmer.</p>
@@ -71,10 +69,12 @@
 <p>Markiere den Lernplatz sichtbar (Post-it „Lernzeit“).</p>
 <p class='task-example'><span>Beispiel:</span> Klebe ein Post-it mit „Handy au&#223;er Sicht“ an den Tisch.</p>
 </div></div>
-    <div class='fact'><strong>Fakt des Tages:</strong> Wenn der Kontext stabil ist, f&#228;llt der Einstieg oft leichter.</div>
-    <h2>Warum das funktioniert</h2>
-    <button class="btn ghost tts" data-tts="bonus-12">Anhören</button>
-    <div class="rich-text" id="bonus-12"><p>Vielleicht kennst du diese Situation: Du sitzt am Schreibtisch, das Handy liegt neben dem Heft oder neben dem Laptop. Du nimmst dir vor, es nicht zu benutzen. Und trotzdem ist es irgendwie „da“. Nicht laut, eher wie ein leiser Hintergrundreiz. Dein Blick wandert kurz hin, ein Gedanke taucht auf, etwas Ungekl&#228;rtes bleibt h&#228;ngen. Genau diese kleinen Momente sind heute wichtig.</p>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fakt des Tages:</strong> Wenn der Kontext stabil ist, f&#228;llt der Einstieg oft leichter.</div>
+      <h2>Warum das funktioniert</h2>
+      
+      <div class="rich-text" id="bonus-12"><p>Vielleicht kennst du diese Situation: Du sitzt am Schreibtisch, das Handy liegt neben dem Heft oder neben dem Laptop. Du nimmst dir vor, es nicht zu benutzen. Und trotzdem ist es irgendwie „da“. Nicht laut, eher wie ein leiser Hintergrundreiz. Dein Blick wandert kurz hin, ein Gedanke taucht auf, etwas Ungekl&#228;rtes bleibt h&#228;ngen. Genau diese kleinen Momente sind heute wichtig.</p>
 <p>An dieser Stelle wird klar, warum ein fester Lernort so hilfreich sein kann. Dein Gehirn arbeitet stark mit Kontext. Umgebungen geben Signale, wof&#252;r sie „da“ sind. Wenn du immer wieder am gleichen Ort lernst, kann dieser Ort nach und nach zu einer Art Startsignal f&#252;r Fokus werden –  nicht  weil du dich zwingst, sondern weil dein Kopf das Muster erkennt.</p>
 <p>In der Psychologie nennt man  das kontextabh&#228;ngiges Ged&#228;chtnis : Orte und Situationen dienen als Abrufhilfen f&#252;r bestimmte Zust&#228;nde und Inhalte.</p>
 <p>Kurz gesagt: Dein Lernort erinnert deinen Kopf daran, wof&#252;r er gerade da ist.</p>
@@ -95,8 +95,8 @@
 <p>Kurz gesagt: Ein Signal kann den Einstieg erleichtern.</p>
 <p>Am Ende dieses Tages hast du nichts „durchgezogen“ und nichts bewiesen. Du hast erlebt, dass Abstand einen Unterschied machen kann – nicht durch Zwang, sondern durch Gestaltung. Dein Verhalten ist dabei verst&#228;ndlich und menschlich. Und du bist dem nicht ausgeliefert: Mit wenigen Handgriffen kannst du dir Situationen bauen, die Lernen leichter machen.</p>
 <p>Morgen geht es darum, diesen Fokus etwas l&#228;nger zu halten – ohne dass es sich nach Druck oder Durchhalten anf&#252;hlt.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Frage 1:</strong> Was ist eine Lernzone?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q12_1' value='A' id='q12_1_A'><span class='box'></span><span class='opt-text'>A: Eine App</span></label>
@@ -126,10 +126,12 @@
 </div>
 <p class='quiz-explain' hidden>Ohne Sichtreiz entsteht weniger Impulsdruck.</p>
 </div></div>
-    <button class="btn primary quiz-check">Antworten prüfen</button>
-    <h2>Reflexion</h2>
-    <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Antworten prüfen</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflexion</h2>
+      <p class="small">Notiere deine Gedanken nur für dich. Es wird nichts gespeichert.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Frage 1:</strong> Wie hat sich Lernen ohne Handy in Sicht angef&#252;hlt?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div>
@@ -145,6 +147,20 @@
 <p><strong>Frage 4:</strong> Was war entlastend?</p>
 <textarea rows='3' placeholder='Notiere deine Gedanken (nur f&#252;r dich)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>Wie zufrieden bist du mit dem Kurs?</label>
+          <input type="text" name="satisfaction" placeholder="z. B. 1-5">
+          <label>Was hat dir am besten gefallen?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Hast du Verbesserungsvorschläge?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Absenden</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

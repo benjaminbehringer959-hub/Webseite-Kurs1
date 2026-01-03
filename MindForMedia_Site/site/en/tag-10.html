@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="kurs.html">Course</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Foreword</a>
-      <a href="abschluss.html">Finish</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Try for free</a>
     </div>
   </div>
 </header>
@@ -45,12 +37,18 @@
   <div class="container narrow">
     <p class="eyebrow">Day 10</p>
     <h1>Day 10</h1>
-    <div class="rich-text"><p>When you think back on the last days, some things may feel clearer than at the beginning. Maybe you did not constantly do something &quot;different,&quot; but you noticed more. Maybe also that quiet feeling: something is not quite the same as before, even if you cannot name it. That is exactly what today is about.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Tasks</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflection</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>When you think back on the last days, some things may feel clearer than at the beginning. Maybe you did not constantly do something &quot;different,&quot; but you noticed more. Maybe also that quiet feeling: something is not quite the same as before, even if you cannot name it. That is exactly what today is about.</p>
 <p>Today is not a conclusion and not a final verdict. It is a quiet look back at what has shown up, without evaluation and without expectations. You take time to compare how you assessed yourself at the start and how it feels now. You also repeat the short focus test and look at your goal again. Not to check or measure, but to gain orientation.</p>
 <p>The goal today is not a balance sheet, but to understand what this first week has done for you.</p></div>
-    
-    <h2>Tasks for today</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Tasks for today</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Task 1</h4>
 <p>Compare your use from day 1 and day 10. * Example:* &quot;On average 30 minutes less per day.&quot;</p>
 </div>
@@ -66,14 +64,17 @@
 <h4>Bonus</h4>
 <p>Write a short weekly reflection. * Example:* &quot;I study more calmly now.&quot;</p>
 </div></div>
-    <div class='fact'><strong>Fact of the day:</strong> People often recognize change only through comparison.</div>
-    <h2>Why this works</h2>
-    <button class="btn ghost tts" data-tts="bonus-10">Listen</button>
-    <div class="rich-text" id="bonus-10"><p>Change is hard to notice in the moment. Comparison makes it visible. Looking back at day 1 helps you see what shifted and what still needs support.</p>
-<p>Goals are not fixed forever. Adjusting a goal to fit your real life makes it more usable, not weaker.</p>
-<p>Side Fact: People often recognize change only through comparison.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fact of the day:</strong> People often recognize change only through comparison.</div>
+      <h2>Why this works</h2>
+      
+      <div class="rich-text" id="bonus-10"><p>Change is hard to notice in the moment. Comparison makes it visible. Looking back at day 1 helps you see what shifted and what still needs support.</p>
+<p>Goals are not fixed forever. Adjusting a goal to fit your real life makes it more usable, not weaker. A goal that fits your day is the one that works.</p>
+<p>Side Fact: People often recognize change only through comparison.</p>
+<p>This day is not about grades. It is about orientation.</p></div>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Question 1:</strong> Why is reflection its own day?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q10_1' value='A' id='q10_1_A'><span class='box'></span><span class='opt-text'>A: To judge everything</span></label>
@@ -103,10 +104,12 @@
 </div>
 <p class='quiz-explain' hidden>Adjusting goals to reality makes them stronger.</p>
 </div></div>
-    <button class="btn primary quiz-check">Check answers</button>
-    <h2>Reflection</h2>
-    <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Check answers</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflection</h2>
+      <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Question 1:</strong> What feels different?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div>
@@ -130,6 +133,20 @@
 <p><strong>Question 6:</strong> What surprised me?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>How satisfied are you with the course?</label>
+          <input type="text" name="satisfaction" placeholder="e.g. 1-5">
+          <label>What did you like most?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Any suggestions for improvement?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>

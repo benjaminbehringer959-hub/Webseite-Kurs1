@@ -19,24 +19,16 @@
   </div>
 </div>
 <header class="site-header">
-  <div class="container">
+  <div class="container header-bar">
     <div class="brand">
       <div class="logo-dot"></div>
       <div class="brand-text">Mind for Media</div>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="kurs.html">Course</a>
-      <a href="onboarding.html">Onboarding</a>
-      <a href="vorwort.html">Foreword</a>
-      <a href="abschluss.html">Finish</a>
-    </nav>
     <div class="header-actions">
       <div class="lang-switch">
         <button class="lang-btn" data-lang="de">DE</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="btn primary" href="onboarding.html">Try for free</a>
     </div>
   </div>
 </header>
@@ -45,13 +37,19 @@
   <div class="container narrow">
     <p class="eyebrow">Day 16</p>
     <h1>Day 16</h1>
-    <div class="rich-text"><p>When you think back to yesterday, you may have noticed that your head feels a bit calmer when fewer things pull at your attention at the same time. Maybe learning was clearer. Maybe you also noticed that some things happen automatically, without you consciously thinking about them.</p>
+    <div class="day-tabs">
+      <button class="tab-btn active" data-tab="tasks">Tasks</button>
+      <button class="tab-btn" data-tab="bonus">Bonus</button>
+      <button class="tab-btn" data-tab="reflex">Reflection</button>
+    </div>
+    <section class="day-section" data-tab="tasks">
+      <div class="rich-text"><p>When you think back to yesterday, you may have noticed that your head feels a bit calmer when fewer things pull at your attention at the same time. Maybe learning was clearer. Maybe you also noticed that some things happen automatically, without you consciously thinking about them.</p>
 <p>That is exactly where today starts. A lot of what you do in daily life does not run through decisions, but through habits. Not because you choose them, but because your brain has learned patterns. These patterns do not change through resolutions, but through repetition and fitting frames.</p>
 <p>The task today is therefore very manageable. You build a small, concrete sequence of cue, action, and a short reward. Nothing big, nothing new. Something that already fits in your day. You observe how it feels when a sequence starts to happen a little by itself.</p>
 <p>The goal today is not consistency, but a first feeling for automaticity.</p></div>
-    
-    <h2>Tasks for today</h2>
-    <div class="task-grid"><div class='task-card'>
+      
+      <h2>Tasks for today</h2>
+      <div class="task-grid"><div class='task-card'>
 <h4>Task 1</h4>
 <p>Choose a small routine after studying (e.g., stretching). * Example:* After each study phase, 2 minutes of stretching.</p>
 </div>
@@ -67,14 +65,17 @@
 <h4>Bonus</h4>
 <p>Tie the routine to a fixed time. * Example:* After school, go outside for 5 minutes.</p>
 </div></div>
-    <div class='fact'><strong>Fact of the day:</strong> The brain strengthens connections that are used regularly.</div>
-    <h2>Why this works</h2>
-    <button class="btn ghost tts" data-tts="bonus-16">Listen</button>
-    <div class="rich-text" id="bonus-16"><p>Small routines become automatic through repetition. The brain strengthens paths that are used regularly. That is why tiny post-study rituals matter.</p>
-<p>A routine gives you a predictable transition and reduces the pull toward scrolling.</p>
-<p>Side Fact: The brain strengthens connections that are used regularly.</p></div>
-    <h2>Quiz</h2>
-    <div class="quiz"><div class='quiz-card' data-answer='B'>
+    </section>
+    <section class="day-section" data-tab="bonus">
+      <div class='fact'><strong>Fact of the day:</strong> The brain strengthens connections that are used regularly.</div>
+      <h2>Why this works</h2>
+      
+      <div class="rich-text" id="bonus-16"><p>Small routines become automatic through repetition. The brain strengthens paths that are used regularly. That is why tiny post study rituals matter.</p>
+<p>A routine gives you a predictable transition and reduces the pull toward scrolling. It closes the learning block and tells your system what comes next.</p>
+<p>Side Fact: The brain strengthens connections that are used regularly.</p>
+<p>The routine can be simple: close your notes, write one sentence, stretch, or tidy your desk. It is the repetition that matters.</p></div>
+      <h2>Quiz</h2>
+      <div class="quiz"><div class='quiz-card' data-answer='B'>
 <p class='quiz-question'><strong>Question 1:</strong> What is a habit loop?</p>
 <div class='quiz-options'>
 <label class='quiz-option'><input type='radio' name='q16_1' value='A' id='q16_1_A'><span class='box'></span><span class='opt-text'>A: Random behavior</span></label>
@@ -104,10 +105,12 @@
 </div>
 <p class='quiz-explain' hidden>Habits require repeated practice over time.</p>
 </div></div>
-    <button class="btn primary quiz-check">Check answers</button>
-    <h2>Reflection</h2>
-    <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
-    <div class="reflex"><div class='reflex-item'>
+      <button class="btn primary quiz-check">Check answers</button>
+    </section>
+    <section class="day-section" data-tab="reflex">
+      <h2>Reflection</h2>
+      <p class="small">Write your thoughts for yourself only. Nothing is saved.</p>
+      <div class="reflex"><div class='reflex-item'>
 <p><strong>Question 1:</strong> When did something run automatically today?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div>
@@ -123,6 +126,20 @@
 <p><strong>Question 4:</strong> What did I learn about repetition?</p>
 <textarea rows='3' placeholder='Write your thoughts (for you only)'></textarea>
 </div></div>
+      <div class="card">
+        <h3>Feedback (optional)</h3>
+        <form class="feedback" data-endpoint="https://script.google.com/macros/s/PASTE-YOUR-APPS-SCRIPT-URL/exec">
+          <label>How satisfied are you with the course?</label>
+          <input type="text" name="satisfaction" placeholder="e.g. 1-5">
+          <label>What did you like most?</label>
+          <textarea rows="3" name="highlight"></textarea>
+          <label>Any suggestions for improvement?</label>
+          <textarea rows="3" name="improvements"></textarea>
+          <button type="submit" class="btn primary">Send</button>
+          <p class="small feedback-status" hidden></p>
+        </form>
+      </div>
+    </section>
   </div>
 </section>
 </main>
