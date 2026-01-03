@@ -12,9 +12,7 @@
 - LMS: LearnDash (Primary)
 - Mehrsprachigkeit: Polylang
 - Payment/Membership:
-  - Empfehlung: WooCommerce + Stripe + PayPal
-  - Hinweis: Fuer Abos benoetigt WooCommerce das Add-on "WooCommerce Subscriptions" (paid)
-  - Alternative (guenstiger): Paid Memberships Pro + Stripe/PayPal
+  - Entscheidung: Paid Memberships Pro + Stripe + PayPal
 - Formulare (Onboarding/Feedback): WPForms Lite oder LearnDash Quiz (wenn moeglich)
 - SEO: RankMath oder Yoast
 - Cache: WP Super Cache / Host-Plugin
@@ -80,9 +78,9 @@
 - Reflexionsfragen: `Inhalt/Reflexionsfragen.docx`
 - Bonuswissen ("Warum das funktioniert"): `Inhalt/Bonuswissen.docx`
 - Tages-Kurztexte: `Inhalt/Kurze Zusammenfassung.docx`
-- Quizfragen: `Inhalt/Quisfragen.docx` (Pruefen, ob dies die finale Version ist)
-- Datei `Inhalt/falsch.docx` wirkt wie Rohfassung / Alternativen -> Bitte klaeren
-- Datei `Inhalt/Aufgaben.docx` ist leer -> Aufgaben fehlen noch
+- Quizfragen: `Inhalt/Quisfragen.docx` (finale Quelle)
+- Aufgaben: `Inhalt/Aufgaben.docx`
+- Datei `Inhalt/falsch.docx` wirkt wie Rohfassung / Alternativen -> optional ignorieren
 
 ## 9) Rechtliches
 Quelle: `Rechtliche Zusatzinfos.docx`
@@ -92,13 +90,9 @@ Anpassungen noetig:
 - Cookies: nur noetige Cookies, Consent nur bei Tracking/Marketing
 
 ## 10) Offene Punkte / Entscheidungen
-1) Payment: WooCommerce + Subscriptions (paid) oder Paid Memberships Pro (kostenarm)?
-2) Aufgaben-Inhalte fehlen: Wo sind die konkreten Aufgaben je Tag?
-3) Quiz-Quellen: Welche Datei ist final (Quisfragen.docx vs falsch.docx)?
-4) Rechtstexte: Finalen Betreiber, Adresse, Kontakt durchgeben.
+1) Rechtstexte: Finalen Betreiber, Adresse, Kontakt durchgeben.
 
 ## 11) Naechste Schritte (wenn du OK gibst)
-- Entscheidung Payment-Stack
 - Content-Bausteine finalisieren (Aufgaben + Quiz-Quelle)
 - Sprach-Overlay + Header-Switcher spezifizieren
 - Erste Seitenstruktur in WordPress aufsetzen

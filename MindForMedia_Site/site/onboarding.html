@@ -1,0 +1,96 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onboarding - Mind for Media</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="onboarding">
+<a class="skip-link" href="#main">Zum Inhalt</a>
+<div class="lang-overlay" id="langOverlay" aria-hidden="true">
+  <div class="lang-card">
+    <h2>Sprache waehlen</h2>
+    <p>Bitte waehle deine Sprache. Du kannst sie spaeter in der Navigation aendern.</p>
+    <div class="lang-actions">
+      <button class="btn primary" data-lang="de">Deutsch</button>
+      <button class="btn ghost" data-lang="en" title="Coming soon">English (bald)</button>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="logo-dot"></div>
+      <div class="brand-text">Mind for Media</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Start</a>
+      <a href="kurs.html">Kurs</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="vorwort.html">Vorwort</a>
+      <a href="abschluss.html">Abschluss</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en" title="Coming soon">EN</button>
+      </div>
+      <a class="btn primary" href="onboarding.html">Kostenlos testen</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="section">
+  <div class="container narrow">
+    <h1>Onboarding</h1>
+    <p class="lead">Beantworte kurz ein paar Fragen, damit du bewusst startest.</p>
+    <div class="progress-wrap"><div class="progress-bar" id="onboardingProgress"></div></div>
+    <form id="onboardingForm">
+      <div class="step active">
+        <h3>Frage 1 von 3</h3>
+        <label>Warum moechtest du deinen Umgang mit Social Media veraendern?</label>
+        <textarea rows="5" placeholder="Deine Antwort"></textarea>
+        <button type="button" class="btn primary next">Weiter</button>
+      </div>
+      <div class="step">
+        <h3>Frage 2 von 3</h3>
+        <label>Wie oft fuehlst du dich beim Lernen abgelenkt?</label>
+        <div class="choices">
+          <label><input type="radio" name="freq"><span class="box"></span> Staendig</label>
+          <label><input type="radio" name="freq"><span class="box"></span> Sehr oft</label>
+          <label><input type="radio" name="freq"><span class="box"></span> Manchmal</label>
+          <label><input type="radio" name="freq"><span class="box"></span> Selten</label>
+          <label><input type="radio" name="freq"><span class="box"></span> Nie</label>
+        </div>
+        <button type="button" class="btn primary next">Weiter</button>
+      </div>
+      <div class="step">
+        <h3>Frage 3 von 3 (optional)</h3>
+        <label>Wie viele Stunden bist du durchschnittlich pro Tag am Smartphone?</label>
+        <input type="text" placeholder="z. B. 2-3 Stunden">
+        <button type="button" class="btn primary finish">Fertig</button>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand small">
+        <div class="logo-dot"></div>
+        <div class="brand-text">Mind for Media</div>
+      </div>
+      <p>Ein 20-Tage-Kurs fuer mehr Fokus beim Lernen.</p>
+    </div>
+    <div class="footer-links">
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="agb.html">AGB</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
